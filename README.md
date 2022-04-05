@@ -1,1 +1,1 @@
-![Metrics](https://metrics.lecoq.io/halilsafakkilic?template=classic&activity=1&languages=1&stars=1&stars.limit=10&activity.limit=5&activity.days=14&activity.filter=all&config.timezone=Europe%2FIstanbul&config.animated=true)
+![Metrics](https://static.halilsafakkilic.com/github.svg)
