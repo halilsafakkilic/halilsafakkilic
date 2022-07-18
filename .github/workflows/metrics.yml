@@ -1,7 +1,9 @@
 # Visit https://github.com/halilsafakkilic/github-metrics#-documentation for full reference
 name: Metrics
 on:
-  schedule: [{cron: "0 0 * * *"}]
+  schedule: [ { cron: "0 0 * * *" } ]
+  workflow_dispatch:
+    push: { branches: [ "master" ] }
 jobs:
   github-metrics:
     runs-on: ubuntu-latest
@@ -13,7 +15,7 @@ jobs:
           token: ${{ secrets.METRICS_TOKEN }}
 
           # Options
-          filename: "my-metrics.svg"
+          filename: "my-metrics"
           user: halilsafakkilic
           template: classic
           base: header, activity, community, repositories, metadata
