@@ -1,1 +1,1 @@
-![Metrics](https://static.halilsafakkilic.com/github.svg)
+![Metrics](/my-metrics.svg)
