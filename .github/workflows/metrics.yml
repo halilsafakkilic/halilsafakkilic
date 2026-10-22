@@ -3,7 +3,7 @@ name: Metrics
 on:
   schedule: [ { cron: "0 0 * * *" } ]
   workflow_dispatch:
-    push: { branches: [ "master" ] }
+  push: { branches: [ "master" ] }
 jobs:
   github-metrics:
     runs-on: ubuntu-latest
@@ -33,6 +33,7 @@ jobs:
           plugin_followup_sections: repositories
           plugin_gists: yes
           plugin_habits: yes
+          plugin_habits_charts: yes
           plugin_habits_charts_type: classic
           plugin_habits_days: 14
           plugin_habits_facts: yes
@@ -50,8 +51,6 @@ jobs:
           plugin_languages_recent_load: 300
           plugin_languages_sections: most-used
           plugin_languages_threshold: 0%
-          plugin_projects: yes
-          plugin_projects_limit: 4
           plugin_rss: yes
           plugin_rss_limit: 4
           plugin_rss_source: https://halilsafakkilic.com/feed
